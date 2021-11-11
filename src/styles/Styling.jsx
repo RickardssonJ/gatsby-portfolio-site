@@ -63,6 +63,24 @@ export const StyledProjectsPage = styled.div`
   }
 `
 
+export const StyledProjectCars = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  margin: 5rem 2rem;
+  text-align: center;
+
+  h3 {
+    margin: 2rem auto 0px;
+    font-weight: 500;
+  }
+
+  p {
+    color: #ccc;
+    margin-top: 0.3rem;
+  }
+`
+
 //////////////////////// Footer ////////////////////////
 
 export const StyledFooter = styled.div`

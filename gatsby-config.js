@@ -6,7 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-styled-components`,
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    "gatsby-transformer-remark",
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -15,7 +17,14 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Portfolio page",
