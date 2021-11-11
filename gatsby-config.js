@@ -17,4 +17,7 @@ module.exports = {
       }
     }
   ],
+  siteMetadata: {
+    title: "Portfolio page",
+  }
 }
