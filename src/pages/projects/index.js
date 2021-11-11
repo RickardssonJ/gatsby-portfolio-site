@@ -38,7 +38,6 @@ query ProjectsPage {
             slug
             stack
             title
-    
           }
           id
         }
