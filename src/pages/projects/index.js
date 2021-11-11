@@ -1,12 +1,14 @@
 import React from 'react'
 import { Layout } from '../../components/Layout'
+import { StyledProjectsPage } from "../../styles/Styling"
 
 export const Projects = () => {
     return (
         <Layout>
-            <div>
+            <StyledProjectsPage>
                 <h2>Portfolio</h2>
-            </div>
+                <h3>Projekt som jag skapat</h3>
+            </StyledProjectsPage>
         </Layout>
     )
 }
