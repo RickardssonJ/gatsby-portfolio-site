@@ -1,7 +1,7 @@
 ---
 title: Trillo
 stack: Svelte & Firebase
-slug: retro-gaming-zone
+slug: trillo
 date: 2021-01-01
 thumb: ../images/thumbs/trillo.png
 featuredImg: ../images/featured/trillo.png

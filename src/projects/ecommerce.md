@@ -1,7 +1,7 @@
 ---
 title: Dressi
 stack: Gatsby & Shopify
-slug: real-kitchen-food
+slug: dressi
 date: 2021-01-02
 thumb: ../images/thumbs/dressi.png
 featuredImg: ../images/featured/dressi.png
