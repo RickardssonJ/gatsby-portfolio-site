@@ -5,7 +5,7 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
 `
 
 export const StyledNavLinksUl = styled.ul`
@@ -13,9 +13,10 @@ export const StyledNavLinksUl = styled.ul`
 
   > a {
     margin-right: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     &:hover {
-      color: #44f331;
+      color: #28f72f;
     }
   }
 `
@@ -32,9 +33,13 @@ export const StyledSection = styled.section`
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 2rem;
+  }
+
+  p {
+    color: #28f72f;
   }
 `
 export const StyledHomepageButton = styled.button`
@@ -53,8 +58,9 @@ export const StyledProjectsPage = styled.div`
   text-align: center;
 
   h2 {
+    color: #28f72f;
     font-size: 3rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 
   h3 {
@@ -71,6 +77,7 @@ export const StyledProjectCars = styled.div`
   text-align: center;
 
   h3 {
+    color: #28f72f;
     margin: 2rem auto 0px;
     font-weight: 500;
   }
@@ -81,10 +88,64 @@ export const StyledProjectCars = styled.div`
   }
 `
 
+//////////////////////// Project detail ////////////////////////
+export const StyledDetailPage = styled.div`
+  h2 {
+    margin-bottom: 1rem;
+    color: #28f72f;
+    font-size: 2rem;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+`
+
+//////////////////////// About ////////////////////////
+
+export const StyledAboutPageWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 3rem;
+
+  h1 {
+    color: #28f72f;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    color: #28f72f;
+    margin-bottom: 2rem;
+    margin-top: 2.9rem;
+    text-align: center;
+  }
+
+  span {
+    color: #28f72f;
+  }
+  ul {
+    list-style: none;
+    margin-left: 40%;
+    font-size: 1.5rem;
+  }
+`
+
 //////////////////////// Footer ////////////////////////
 
 export const StyledFooter = styled.div`
+  display: flex;
+  align-items: center;
   text-align: center;
   color: #bbb;
-  margin: 3rem auto;
+  margin: 2rem auto;
+
+  .footerImagesDiv {
+    display: flex;
+  }
+
+  .footerImages {
+    width: 2rem;
+    margin-right: 1rem;
+  }
 `

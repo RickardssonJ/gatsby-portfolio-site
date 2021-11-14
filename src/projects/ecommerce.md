@@ -1,8 +1,8 @@
 ---
 title: Dressi
-stack: Gatsby & Shopify
+stack: MERN
 slug: dressi
-date: 2021-01-02
+date: 2021-01-05
 thumb: ../images/thumbs/dressi.png
 featuredImg: ../images/featured/dressi.png
 ---

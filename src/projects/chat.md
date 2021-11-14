@@ -1,8 +1,8 @@
 ---
 title: Chat
-stack: Vue & Firebase
+stack: MERN
 slug: chat
-date: 2021-01-03
+date: 2021-01-02
 thumb: ../images/thumbs/chat.jpg
 featuredImg: ../images/featured/chat.jpg
 ---

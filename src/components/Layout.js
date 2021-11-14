@@ -1,6 +1,6 @@
 import React from 'react'
 import GlobalStyle from '../styles/GlobalStyles'
-import { StyledFooter } from "../styles/Styling"
+import { Footer } from './Footer'
 import { Navbar } from './Navbar'
 
 
@@ -12,14 +12,13 @@ export const Layout = ({ children }) => {
     return (
         <>
             <GlobalStyle />
-
             <Navbar />
+            <hr />
             <div>
                 {children}
             </div>
-            <StyledFooter>
-                <p>Copyright 2021 Jimmy Rickardsson</p>
-            </StyledFooter>
+            <hr />
+            <Footer />
 
         </>
     )

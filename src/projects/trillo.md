@@ -1,8 +1,8 @@
 ---
 title: Trillo
-stack: Svelte & Firebase
+stack: HTML/CSS/SASS
 slug: trillo
-date: 2021-01-01
+date: 2021-01-03
 thumb: ../images/thumbs/trillo.png
 featuredImg: ../images/featured/trillo.png
 ---

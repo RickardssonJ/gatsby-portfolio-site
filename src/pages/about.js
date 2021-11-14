@@ -1,14 +1,34 @@
 import React from 'react'
 import { Layout } from '../components/Layout'
+import { StyledAboutPageWrapper } from '../styles/Styling'
 
 const About = () => {
     return (
         <Layout>
-            <div>
-                <h1>About me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Tortor posuere ac ut consequat semper viverra nam. Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Ut enim blandit volutpat maecenas volutpat blandit. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nullam vehicula ipsum a arcu. Nam at lectus urna duis convallis convallis. Eros donec ac odio tempor orci dapibus ultrices in. Blandit massa enim nec dui nunc mattis enim ut. Congue mauris rhoncus aenean vel elit scelerisque. Velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit laoreet.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Tortor posuere ac ut consequat semper viverra nam. Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Ut enim blandit volutpat maecenas volutpat blandit. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nullam vehicula ipsum a arcu. Nam at lectus urna duis convallis convallis. Eros donec ac odio tempor orci dapibus ultrices in. Blandit massa enim nec dui nunc mattis enim ut. Congue mauris rhoncus aenean vel elit scelerisque. Velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit laoreet.</p>
-            </div>
+            <StyledAboutPageWrapper>
+                <div>
+                    <h1>Om mig</h1>
+                    <p>Mitt namn är Jimmy Rickardsson och jag bor i Stockholm.<br />
+                        Jag är i grund och botten en utbildad elektriker med många års erfarenhet inom byggbranschen men jag har alltid haft ett stort intresse för IT och programmering och nu har jag tagit beslutet att följa min dröm och bli en duktig utvecklare!
+                        För tillfället så studerar jag mitt andra år på Nackademins yrkeshögskola i Solna och utbildningen web developer full stack opensource.
+                        Det läggs mycket fokus på både front end och back end, men även på agilt arbete.
+                        Jag beräknas vara klar med min utbildning år 2022.</p>
+                </div>
+                <div>
+                    <h2>Jag har kunskaper inom</h2>
+                    <ul>
+                        <li><span>J</span>avaScript</li>
+                        <li><span>N</span>odeJS / Express</li>
+                        <li><span>H</span>TML/CSS</li>
+                        <li><span>R</span>eact</li>
+                        <li><span>G</span>atsbyJS</li>
+                        <li><span>P</span>HP</li>
+                        <li><span>m</span>ySQL</li>
+                        <li><span>n</span>oSQL</li>
+                        <li><span>g</span>it</li>
+                    </ul>
+                </div>
+            </StyledAboutPageWrapper>
         </Layout>
     )
 }

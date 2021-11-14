@@ -12,9 +12,9 @@ export default function Home({ data }) {
       <StyledSection>
         <div>
           <h2>Hej 👋 </h2>
-          <h3>Develop & Deploy</h3>
-          <p>Web developer based in sweden</p>
-          <Link to="/projects"><StyledHomepageButton>Mina projekt</StyledHomepageButton></Link>
+          <h3>Mitt namn är Jimmy och jag är en full-stack webbutvecklare</h3>
+          <p>Webbutvecklare baserad i Stockholm</p>
+          <Link to="/projects"><StyledHomepageButton>Se mina projekt</StyledHomepageButton></Link>
         </div>
         <div>
           <Img fluid={data.file.childImageSharp.fluid} />
@@ -27,7 +27,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query homePageImg {
-  file(relativePath: {eq: "JimmyWaterColor3.jpg"}) {
+  file(relativePath: {eq: "jimmyPortfolioHomepagePic.png"}) {
     id
     childImageSharp {
       fluid {
@@ -37,4 +37,4 @@ query homePageImg {
   }
 }
 `
-// ...gatsbyImageSharpFluid gör så att alla värden för bilden hämtas ner och kan användas. Istället för att tex hämta src sizes osv manuellt
+// ...gatsbyImageSharpFluid gör så att alla värden för bilden hämtas ner och kan användas. Istället för att tex hämta sr√
