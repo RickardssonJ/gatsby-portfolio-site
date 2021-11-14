@@ -5,7 +5,6 @@ import { StyledSection, StyledHomepageButton } from "../styles/Styling"
 import Img from "gatsby-image"
 
 export default function Home({ data }) {
-  console.log(data)
 
   return (
     <Layout>

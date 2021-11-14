@@ -23,8 +23,7 @@ export const Footer = () => {
         }
       }
     `)
-    console.log(data)
-    const images = data.allFile.edges
+
     return (
         <>
             <StyledFooter>
