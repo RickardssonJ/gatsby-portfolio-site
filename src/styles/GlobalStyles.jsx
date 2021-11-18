@@ -15,7 +15,7 @@ html, body {
     background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
   background-repeat: no-repeat;
   max-width: 1200px;
-  margin: 3rem auto;
+  margin: 2rem auto 3rem auto;
   }
 
   p{
