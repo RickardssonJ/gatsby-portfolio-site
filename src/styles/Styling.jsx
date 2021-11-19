@@ -25,7 +25,7 @@ export const StyledNavLinksUl = styled.ul`
     text-shadow: 2px 2px #000000;
 
     &:hover {
-      color: #57e95c;
+      color: #ef6128;
       transform: scale(1.1);
     }
   }
@@ -49,7 +49,7 @@ export const StyledSection = styled.section`
   }
 
   p {
-    color: #57e95c;
+    color: #ef6128;
   }
 `
 export const StyledImageWrapper = styled.div`
@@ -57,7 +57,13 @@ export const StyledImageWrapper = styled.div`
 `
 
 export const StyledHomepageButton = styled.button`
-  background: #d42990;
+  //background: #e55b19;
+  background: rgb(242, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(242, 0, 0, 1) 0%,
+    rgba(249, 117, 55, 1) 100%
+  );
   padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 0.7rem;
@@ -83,7 +89,7 @@ export const StyledProjectsPage = styled.div`
   align-items: center;
 
   h2 {
-    color: #57e95c;
+    color: #ef6128;
     font-size: 3rem;
     margin-top: 2rem;
   }
@@ -102,7 +108,7 @@ export const StyledProjectCardWrapper = styled.div`
   text-align: center;
 
   h3 {
-    color: #57e95c;
+    color: #ef6128;
     margin: 2rem auto 0px;
     font-weight: 500;
   }
@@ -136,12 +142,12 @@ export const StyledDetailPage = styled.div`
 
   h2 {
     margin-bottom: 1rem;
-    color: #57e95c;
+    color: #ef6128;
     font-size: 2rem;
   }
 
-  .title {
-    margin-bottom: 2rem;
+  h3 {
+    margin-bottom: 0.6rem;
   }
 `
 
@@ -155,20 +161,20 @@ export const StyledAboutPageWrapper = styled.div`
   margin-top: 15vh;
 
   h1 {
-    color: #57e95c;
+    color: #ef6128;
     margin-bottom: 2rem;
     //margin-top: 2rem;
   }
 
   h2 {
-    color: #57e95c;
+    color: #ef6128;
     margin-bottom: 2rem;
     //margin-top: 2.9rem;
     text-align: center;
   }
 
   span {
-    color: #57e95c;
+    color: #ef6128;
   }
   ul {
     list-style: none;

@@ -12,7 +12,6 @@ export const Layout = ({ children }) => {
     return (
         <>
             <GlobalStyle />
-
             <Navbar />
             <div>
                 {children}
