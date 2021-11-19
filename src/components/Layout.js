@@ -8,18 +8,16 @@ export const Layout = ({ children }) => {
 
 
 
-    // allt som layout komponenten wrappar som tex index.js blit childrens till layout komponenten och finns då i props.children
+    // allt som layout komponenten wrappar som tex index.js blir childrens till layout komponenten och finns då i props.children
     return (
         <>
             <GlobalStyle />
+
             <Navbar />
-            <hr />
             <div>
                 {children}
             </div>
-            <hr />
             <Footer />
-
         </>
     )
 }

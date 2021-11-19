@@ -6,6 +6,11 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   margin: 2rem auto;
+
+  h1 {
+    -webkit-text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #000000;
+  }
 `
 
 export const StyledNavLinksUl = styled.ul`
@@ -15,8 +20,13 @@ export const StyledNavLinksUl = styled.ul`
     margin-right: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: transform 0.2s;
+    -webkit-text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #000000;
+
     &:hover {
-      color: #28f72f;
+      color: #57e95c;
+      transform: scale(1.1);
     }
   }
 `
@@ -39,9 +49,13 @@ export const StyledSection = styled.section`
   }
 
   p {
-    color: #28f72f;
+    color: #57e95c;
   }
 `
+export const StyledImageWrapper = styled.div`
+  max-width: 29rem;
+`
+
 export const StyledHomepageButton = styled.button`
   background: #d42990;
   padding: 0.7rem 1.2rem;
@@ -50,6 +64,14 @@ export const StyledHomepageButton = styled.button`
   margin-top: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  transition: transform 0.2s;
+
+  -webkit-box-shadow: 4px 1px 17px 0px rgba(0, 0, 0, 0.62);
+  box-shadow: 4px 1px 17px 0px rgba(0, 0, 0, 0.62);
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 //////////////////////// Projects ////////////////////////
@@ -58,9 +80,9 @@ export const StyledProjectsPage = styled.div`
   text-align: center;
 
   h2 {
-    color: #28f72f;
+    color: #57e95c;
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   h3 {
@@ -69,15 +91,15 @@ export const StyledProjectsPage = styled.div`
   }
 `
 
-export const StyledProjectCars = styled.div`
+export const StyledProjectCardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5rem;
-  margin: 5rem 2rem;
+  grid-gap: 3rem;
+  margin: 3rem 2rem;
   text-align: center;
 
   h3 {
-    color: #28f72f;
+    color: #57e95c;
     margin: 2rem auto 0px;
     font-weight: 500;
   }
@@ -86,13 +108,29 @@ export const StyledProjectCars = styled.div`
     color: #ccc;
     margin-top: 0.3rem;
   }
+  //#ffffff10
+  .styledCard {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    --webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    height: 25rem;
+    padding: 1rem;
+    transition: transform 0.2s;
+    -webkit-box-shadow: 4px 1px 17px 0px rgba(0, 0, 0, 0.62);
+    box-shadow: 4px 1px 17px 0px rgba(0, 0, 0, 0.62);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `
 
 //////////////////////// Project detail ////////////////////////
 export const StyledDetailPage = styled.div`
   h2 {
     margin-bottom: 1rem;
-    color: #28f72f;
+    color: #57e95c;
     font-size: 2rem;
   }
 
@@ -109,20 +147,20 @@ export const StyledAboutPageWrapper = styled.div`
   margin-bottom: 3rem;
 
   h1 {
-    color: #28f72f;
+    color: #57e95c;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
 
   h2 {
-    color: #28f72f;
+    color: #57e95c;
     margin-bottom: 2rem;
     margin-top: 2.9rem;
     text-align: center;
   }
 
   span {
-    color: #28f72f;
+    color: #57e95c;
   }
   ul {
     list-style: none;
@@ -139,6 +177,8 @@ export const StyledFooter = styled.div`
   text-align: center;
   color: #bbb;
   margin: 2rem auto;
+  height: 100%;
+  bottom: 0;
 
   .footerImagesDiv {
     display: flex;
@@ -147,5 +187,9 @@ export const StyledFooter = styled.div`
   .footerImages {
     width: 2rem;
     margin-right: 1rem;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 `

@@ -1,7 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import { Layout } from '../../components/Layout'
-import { StyledProjectsPage, StyledProjectCars } from "../../styles/Styling"
+import { StyledProjectsPage, StyledProjectCardWrapper } from "../../styles/Styling"
 import Img from "gatsby-image"
 
 const Projects = ({ data }) => {
@@ -13,10 +13,10 @@ const Projects = ({ data }) => {
         <h2>Portfolio</h2>
         <h3>Projekt som jag skapat</h3>
       </StyledProjectsPage>
-      <StyledProjectCars>
+      <StyledProjectCardWrapper>
         {projects.map(project => (
           <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
-            <div>
+            <div className="styledCard">
               <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
               <h3>{project.frontmatter.title}</h3>
               <p>{project.frontmatter.stack}</p>
@@ -24,7 +24,7 @@ const Projects = ({ data }) => {
           </Link>
         )
         )}
-      </StyledProjectCars>
+      </StyledProjectCardWrapper>
     </Layout>
   )
 }
