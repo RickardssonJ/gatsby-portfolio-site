@@ -1,6 +1,8 @@
 import React from 'react'
 import { Layout } from '../components/Layout'
+import { SidePanel } from '../components/SidePanel'
 import { StyledAboutPageWrapper } from '../styles/Styling'
+
 
 const About = () => {
     return (
@@ -28,6 +30,7 @@ const About = () => {
                         <li><span>g</span>it</li>
                     </ul>
                 </div>
+                <SidePanel />
             </StyledAboutPageWrapper>
         </Layout>
     )

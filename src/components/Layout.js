@@ -1,7 +1,7 @@
 import React from 'react'
 import GlobalStyle from '../styles/GlobalStyles'
-import { Footer } from './Footer'
 import { Navbar } from './Navbar'
+
 
 
 export const Layout = ({ children }) => {
@@ -17,7 +17,6 @@ export const Layout = ({ children }) => {
             <div>
                 {children}
             </div>
-            <Footer />
         </>
     )
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import { Layout } from '../../components/Layout'
 import { StyledProjectsPage, StyledProjectCardWrapper } from "../../styles/Styling"
 import Img from "gatsby-image"
+import { SidePanel } from '../../components/SidePanel'
 
 const Projects = ({ data }) => {
 
@@ -10,21 +11,20 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <StyledProjectsPage>
-        <h2>Portfolio</h2>
-        <h3>Projekt som jag skapat</h3>
+        <StyledProjectCardWrapper>
+          {projects.map(project => (
+            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
+              <div className="styledCard">
+                <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
+                <h3>{project.frontmatter.title}</h3>
+                <p>{project.frontmatter.stack}</p>
+              </div>
+            </Link>
+          )
+          )}
+        </StyledProjectCardWrapper>
+        <SidePanel />
       </StyledProjectsPage>
-      <StyledProjectCardWrapper>
-        {projects.map(project => (
-          <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
-            <div className="styledCard">
-              <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
-              <h3>{project.frontmatter.title}</h3>
-              <p>{project.frontmatter.stack}</p>
-            </div>
-          </Link>
-        )
-        )}
-      </StyledProjectCardWrapper>
     </Layout>
   )
 }

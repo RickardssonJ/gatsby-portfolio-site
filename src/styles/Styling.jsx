@@ -34,7 +34,7 @@ export const StyledNavLinksUl = styled.ul`
 //////////////////////// Homepage ////////////////////////
 export const StyledSection = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.1rem;
   grid-gap: 3.5rem;
   align-items: center;
 
@@ -78,6 +78,9 @@ export const StyledHomepageButton = styled.button`
 
 export const StyledProjectsPage = styled.div`
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 0rem;
+  align-items: center;
 
   h2 {
     color: #57e95c;
@@ -128,6 +131,9 @@ export const StyledProjectCardWrapper = styled.div`
 
 //////////////////////// Project detail ////////////////////////
 export const StyledDetailPage = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 5rem;
+
   h2 {
     margin-bottom: 1rem;
     color: #57e95c;
@@ -143,19 +149,21 @@ export const StyledDetailPage = styled.div`
 
 export const StyledAboutPageWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 0.1rem;
+  align-items: center;
   margin-bottom: 3rem;
+  margin-top: 15vh;
 
   h1 {
     color: #57e95c;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    //margin-top: 2rem;
   }
 
   h2 {
     color: #57e95c;
     margin-bottom: 2rem;
-    margin-top: 2.9rem;
+    //margin-top: 2.9rem;
     text-align: center;
   }
 
@@ -169,24 +177,23 @@ export const StyledAboutPageWrapper = styled.div`
   }
 `
 
-//////////////////////// Footer ////////////////////////
+//////////////////////// Side panel ////////////////////////
 
-export const StyledFooter = styled.div`
+export const StyledSidePanel = styled.div`
   display: flex;
+  float: right;
   align-items: center;
-  text-align: center;
-  color: #bbb;
-  margin: 2rem auto;
-  height: 100%;
-  bottom: 0;
 
   .footerImagesDiv {
     display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
   }
 
   .footerImages {
     width: 2rem;
-    margin-right: 1rem;
+    margin-bottom: 3.5rem;
+
     transition: transform 0.2s;
     &:hover {
       transform: scale(1.2);

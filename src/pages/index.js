@@ -3,6 +3,8 @@ import React from "react"
 import { Layout } from "../components/Layout"
 import { StyledSection, StyledHomepageButton, StyledImageWrapper } from "../styles/Styling"
 import Img from "gatsby-image"
+import { SidePanel } from '../components/SidePanel'
+
 
 export default function Home({ data }) {
 
@@ -18,7 +20,9 @@ export default function Home({ data }) {
         <StyledImageWrapper>
           <Img fluid={data.file.childImageSharp.fluid} />
         </StyledImageWrapper>
+      <SidePanel />
       </StyledSection>
+
     </Layout>
 
   )

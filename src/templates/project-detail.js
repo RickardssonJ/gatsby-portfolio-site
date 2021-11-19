@@ -3,6 +3,7 @@ import Img from "gatsby-image"
 import { Layout } from '../components/Layout'
 import { StyledDetailPage } from "../styles/Styling"
 import { graphql } from 'gatsby'
+import { SidePanel } from '../components/SidePanel'
 
 
 const ProjectDetailPage = ({ data }) => {
@@ -12,13 +13,14 @@ const ProjectDetailPage = ({ data }) => {
     <Layout>
       <StyledDetailPage>
         <div className="title">
+        <div>
           <h2>{title}</h2>
           <h3>Byggd i: {stack}</h3>
-        </div>
-        <div>
           <Img fluid={featuredImg.childImageSharp.fluid} />
-        </div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
+        </div>
+        <SidePanel />
       </StyledDetailPage>
     </Layout>
   )
