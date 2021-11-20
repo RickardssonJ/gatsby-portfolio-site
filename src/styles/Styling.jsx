@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import backgroundImage from "../Images/orange.jpg"
 
 //////////////////////// Navbar ////////////////////////
 export const StyledNav = styled.nav`
@@ -153,7 +154,6 @@ export const StyledDetailPage = styled.div`
 
   .imgWrapper {
     padding: 1rem 2rem 3rem 2rem;
-
   }
 
   h2 {
@@ -254,14 +254,11 @@ export const StyledSidePanel = styled.div`
 //////////////////////// Wrapper ////////////////////////
 
 export const StyledWrapper = styled.div`
-  background-image: url("https://wallpaperaccess.com/full/2570571.jpg");
-  /* backdrop-filter: blur(19px);
-  --webkit-backdrop-filter: blur(19px); */
+  //background-image: url("https://wallpaperaccess.com/full/2570571.jpg");
+  background-image: url(${backgroundImage});
 
   border-radius: 15px;
-  //border: 1px solid #a3a3a3;
   max-width: 1400px;
-  //max-height: 1400px;
   min-height: 700px;
   margin: 3rem auto;
 `
