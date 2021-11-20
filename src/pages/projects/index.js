@@ -23,7 +23,9 @@ const Projects = ({ data }) => {
           )
           )}
         </StyledProjectCardWrapper>
-        <SidePanel />
+        <div className="sidePanelWrapper">
+          <SidePanel />
+        </div>
       </StyledProjectsPage>
     </Layout>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import GlobalStyle from '../styles/GlobalStyles'
+import { StyledWrapper } from '../styles/Styling'
 import { Navbar } from './Navbar'
 
 
@@ -12,10 +13,13 @@ export const Layout = ({ children }) => {
     return (
         <>
             <GlobalStyle />
-            <Navbar />
-            <div>
-                {children}
-            </div>
+            <StyledWrapper>
+                <Navbar />
+                <div>
+                    {children}
+                </div>
+            </StyledWrapper>
+
         </>
     )
 }

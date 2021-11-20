@@ -9,22 +9,19 @@ const GlobalStyle = createGlobalStyle`
   color: white;
 }
 html, body {
-  min-height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(315deg, #000000 0%, #313131 100%);
 }
-  body {
-    //background-image: url("https://images.pexels.com/photos/7629315/pexels-photo-7629315.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  //background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
-  background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #313131 100%);
-  background-repeat: no-repeat;
-  max-width: 1200px;
-  margin: 2rem auto 3rem auto;
-  }
+
 
   p{
       margin: 1.1rem auto;
       line-height: 1.5rem;
   }
+
+  ::-webkit-scrollbar {
+  display: none;
+}
 `
 
 export default GlobalStyle

@@ -8,7 +8,7 @@ const About = () => {
     return (
         <Layout>
             <StyledAboutPageWrapper>
-                <div>
+                <div className="aboutMeText">
                     <h1>Om mig</h1>
                     <p>Mitt namn är Jimmy Rickardsson och jag bor i Stockholm.<br />
                         Jag är i grund och botten en utbildad elektriker med många års erfarenhet inom byggbranschen men jag har alltid haft ett stort intresse för IT och programmering och nu har jag tagit beslutet att följa min dröm och bli en duktig utvecklare!
@@ -16,7 +16,7 @@ const About = () => {
                         Det läggs mycket fokus på både front end och back end, men även på agilt arbete.
                         Jag beräknas vara klar med min utbildning år 2022.</p>
                 </div>
-                <div>
+                <div className="aboutMeKnowledge">
                     <h2>Jag har kunskaper inom</h2>
                     <ul>
                         <li><span>J</span>avaScript</li>

@@ -20,7 +20,7 @@ export default function Home({ data }) {
         <StyledImageWrapper>
           <Img fluid={data.file.childImageSharp.fluid} />
         </StyledImageWrapper>
-      <SidePanel />
+        <SidePanel />
       </StyledSection>
 
     </Layout>

@@ -12,13 +12,13 @@ const ProjectDetailPage = ({ data }) => {
   return (
     <Layout>
       <StyledDetailPage>
-        <div>
-          <div>
-            <h2>{title}</h2>
-            <h3>Byggd i: {stack}</h3>
+        <div className="blurredDiv">
+          <h2>{title}</h2>
+          <h3>Byggd i: {stack}</h3>
+          <div className="imgWrapper">
             <Img fluid={featuredImg.childImageSharp.fluid} />
-            <div dangerouslySetInnerHTML={{ __html: html }} />
           </div>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
         <SidePanel />
       </StyledDetailPage>
