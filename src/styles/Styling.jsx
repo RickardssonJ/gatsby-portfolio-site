@@ -61,7 +61,6 @@ export const StyledImageWrapper = styled.div`
 `
 
 export const StyledHomepageButton = styled.button`
-  //background: #e55b19;
   background: rgb(242, 0, 0);
   background: linear-gradient(
     45deg,
@@ -229,8 +228,6 @@ export const StyledAboutPageWrapper = styled.div`
 //////////////////////// Side panel ////////////////////////
 
 export const StyledSidePanel = styled.div`
-  /* display: flex;
-  align-items: center; */
 
   .footerImagesDiv {
     float: right;
@@ -254,7 +251,6 @@ export const StyledSidePanel = styled.div`
 //////////////////////// Wrapper ////////////////////////
 
 export const StyledWrapper = styled.div`
-  //background-image: url("https://wallpaperaccess.com/full/2570571.jpg");
   background-image: url(${backgroundImage});
 
   border-radius: 15px;
