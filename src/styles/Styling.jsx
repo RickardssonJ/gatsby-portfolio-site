@@ -20,6 +20,7 @@ export const StyledNavLinksUl = styled.ul`
 
   > a {
     text-decoration: none;
+    color: white;
     margin-right: 2.5rem;
     font-size: 1.2rem;
     font-weight: 600;
