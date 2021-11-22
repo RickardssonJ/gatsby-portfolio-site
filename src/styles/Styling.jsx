@@ -19,6 +19,7 @@ export const StyledNavLinksUl = styled.ul`
   text-decoration: none;
 
   > a {
+    text-decoration: none;
     margin-right: 2.5rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -228,7 +229,6 @@ export const StyledAboutPageWrapper = styled.div`
 //////////////////////// Side panel ////////////////////////
 
 export const StyledSidePanel = styled.div`
-
   .footerImagesDiv {
     float: right;
     display: flex;
